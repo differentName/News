@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14AD7BF1B567043293E53CB7 /* Pods_news.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 202F7FFF9EE1B62AD637CD4B /* Pods_news.framework */; };
+		3E01644F1F41945B006B63B0 /* TQYRMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E01644E1F41945B006B63B0 /* TQYRMainTableViewController.swift */; };
+		3E0164531F419639006B63B0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E0164521F419639006B63B0 /* Alamofire.framework */; };
+		3E01645A1F41A269006B63B0 /* TQYRMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0164591F41A269006B63B0 /* TQYRMainViewController.swift */; };
 		3E7B3E321F41214800242993 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B3E311F41214800242993 /* AppDelegate.swift */; };
 		3E7B3E341F41214800242993 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B3E331F41214800242993 /* ViewController.swift */; };
 		3E7B3E371F41214800242993 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7B3E351F41214800242993 /* Main.storyboard */; };
@@ -34,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		202F7FFF9EE1B62AD637CD4B /* Pods_news.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_news.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21746D813855E9AB8648F754 /* Pods-news.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-news.release.xcconfig"; path = "Pods/Target Support Files/Pods-news/Pods-news.release.xcconfig"; sourceTree = "<group>"; };
+		3E01644E1F41945B006B63B0 /* TQYRMainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQYRMainTableViewController.swift; sourceTree = "<group>"; };
+		3E0164501F4194A8006B63B0 /* libMagicalRecord.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMagicalRecord.a; path = "../../../Library/Developer/Xcode/DerivedData/news-efyhyrzxvhoccxctdilijhvnfbqc/Build/Products/Debug-iphonesimulator/MagicalRecord/libMagicalRecord.a"; sourceTree = "<group>"; };
+		3E0164521F419639006B63B0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/news-efyhyrzxvhoccxctdilijhvnfbqc/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		3E0164571F419EA9006B63B0 /* MJCSegmentInterface-Briding-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MJCSegmentInterface-Briding-Header.h"; sourceTree = "<group>"; };
+		3E0164591F41A269006B63B0 /* TQYRMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQYRMainViewController.swift; sourceTree = "<group>"; };
 		3E7B3E2E1F41214800242993 /* news.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = news.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7B3E311F41214800242993 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E7B3E331F41214800242993 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,7 @@
 		3E7B3E4D1F41214800242993 /* newsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7B3E511F41214800242993 /* newsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsUITests.swift; sourceTree = "<group>"; };
 		3E7B3E531F41214800242993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDC245363A0BB3927DFA14A5 /* Pods-news.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-news.debug.xcconfig"; path = "Pods/Target Support Files/Pods-news/Pods-news.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E0164531F419639006B63B0 /* Alamofire.framework in Frameworks */,
+				14AD7BF1B567043293E53CB7 /* Pods_news.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +95,8 @@
 				3E7B3E451F41214800242993 /* newsTests */,
 				3E7B3E501F41214800242993 /* newsUITests */,
 				3E7B3E2F1F41214800242993 /* Products */,
+				ADD44D04DC514ED8AF54A63B /* Pods */,
+				7AE5707B894190370CE3FF83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +114,14 @@
 			isa = PBXGroup;
 			children = (
 				3E7B3E311F41214800242993 /* AppDelegate.swift */,
+				3E0164571F419EA9006B63B0 /* MJCSegmentInterface-Briding-Header.h */,
 				3E7B3E331F41214800242993 /* ViewController.swift */,
 				3E7B3E351F41214800242993 /* Main.storyboard */,
 				3E7B3E381F41214800242993 /* Assets.xcassets */,
 				3E7B3E3A1F41214800242993 /* LaunchScreen.storyboard */,
 				3E7B3E3D1F41214800242993 /* Info.plist */,
+				3E01644E1F41945B006B63B0 /* TQYRMainTableViewController.swift */,
+				3E0164591F41A269006B63B0 /* TQYRMainViewController.swift */,
 			);
 			path = news;
 			sourceTree = "<group>";
@@ -125,6 +144,25 @@
 			path = newsUITests;
 			sourceTree = "<group>";
 		};
+		7AE5707B894190370CE3FF83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E0164521F419639006B63B0 /* Alamofire.framework */,
+				3E0164501F4194A8006B63B0 /* libMagicalRecord.a */,
+				202F7FFF9EE1B62AD637CD4B /* Pods_news.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADD44D04DC514ED8AF54A63B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDC245363A0BB3927DFA14A5 /* Pods-news.debug.xcconfig */,
+				21746D813855E9AB8648F754 /* Pods-news.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E7B3E561F41214800242993 /* Build configuration list for PBXNativeTarget "news" */;
 			buildPhases = (
+				4CE0F4EDE752F42FD75BC7CE /* [CP] Check Pods Manifest.lock */,
 				3E7B3E2A1F41214800242993 /* Sources */,
 				3E7B3E2B1F41214800242993 /* Frameworks */,
 				3E7B3E2C1F41214800242993 /* Resources */,
+				23A0702350288CFC1F63AFDE /* [CP] Embed Pods Frameworks */,
+				38A7356EA62B003E8FE4A9AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,13 +296,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23A0702350288CFC1F63AFDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-news/Pods-news-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38A7356EA62B003E8FE4A9AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-news/Pods-news-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CE0F4EDE752F42FD75BC7CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3E7B3E2A1F41214800242993 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E01644F1F41945B006B63B0 /* TQYRMainTableViewController.swift in Sources */,
 				3E7B3E341F41214800242993 /* ViewController.swift in Sources */,
 				3E7B3E321F41214800242993 /* AppDelegate.swift in Sources */,
+				3E01645A1F41A269006B63B0 /* TQYRMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +504,7 @@
 		};
 		3E7B3E571F41214800242993 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDC245363A0BB3927DFA14A5 /* Pods-news.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 83QJKJUUMN;
@@ -421,12 +513,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cd.news;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "news/MJCSegmentInterface-Briding-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		3E7B3E581F41214800242993 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21746D813855E9AB8648F754 /* Pods-news.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 83QJKJUUMN;
@@ -435,6 +529,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cd.news;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "news/MJCSegmentInterface-Briding-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -512,6 +607,7 @@
 				3E7B3E581F41214800242993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E7B3E591F41214800242993 /* Build configuration list for PBXNativeTarget "newsTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +616,7 @@
 				3E7B3E5B1F41214800242993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E7B3E5C1F41214800242993 /* Build configuration list for PBXNativeTarget "newsUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +625,7 @@
 				3E7B3E5E1F41214800242993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

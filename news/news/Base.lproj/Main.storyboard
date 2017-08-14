@@ -29,35 +29,6 @@
             </objects>
             <point key="canvasLocation" x="-1548" y="-154"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="f3M-pG-SvW">
-            <objects>
-                <tableViewController id="e2b-gg-rIx" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="s8Q-FN-yhh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="a10-6s-Zsh">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a10-6s-Zsh" id="yj8-zu-1Ca">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="e2b-gg-rIx" id="yID-fx-dQu"/>
-                            <outlet property="delegate" destination="e2b-gg-rIx" id="kVn-3z-ohs"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="ZuS-iD-01Z"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lIm-zV-6bm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="439" y="-1141"/>
-        </scene>
         <!--Item-->
         <scene sceneID="FBn-2O-FSu">
             <objects>
@@ -68,12 +39,31 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="e2b-gg-rIx" kind="relationship" relationship="rootViewController" id="g62-im-XO5"/>
+                        <segue destination="Xhn-UX-yhD" kind="relationship" relationship="rootViewController" id="oIM-6I-y8C"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hub-ZX-qTj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-441" y="-1141"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="SkW-3s-47M">
+            <objects>
+                <viewController id="Xhn-UX-yhD" customClass="TQYRMainViewController" customModule="news" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LeU-aT-VUN"/>
+                        <viewControllerLayoutGuide type="bottom" id="xM7-FI-2Ry"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lAs-f0-5aB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="c98-KC-rX2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kdr-nJ-bhY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="-1182"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="VHT-W1-kDn">
