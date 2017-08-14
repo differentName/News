@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					3E7B3E2D1F41214800242993 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 83QJKJUUMN;
 						ProvisioningStyle = Automatic;
 					};
 					3E7B3E411F41214800242993 = {
@@ -414,7 +415,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 83QJKJUUMN;
 				INFOPLIST_FILE = news/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cd.news;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,7 +429,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 83QJKJUUMN;
 				INFOPLIST_FILE = news/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cd.news;
 				PRODUCT_NAME = "$(TARGET_NAME)";
