@@ -114,8 +114,10 @@ class TQYRMainTableViewController: UITableViewController {
         Alamofire.request("http://api.jisuapi.com/news/get",parameters: ["channel": typeAry[type],"appkey":"0a4d2c1f8257519d"]).responseJSON { response in
             
             //请求成功
+            //as? NSDictionary 因为json被当做一个any类型 无法当做字典取值 所以 需要将any转换为字典类型  通过as  注意NSDictionary不能用Dictionary替换
             if let json = response.result.value as? NSDictionary {
                 print("JSON: \(json)") // serialized json response
+                
                 let resultDict = json["result"] as? NSDictionary
               let listAry =  TQYRMainListModel.mj_objectArray(withKeyValuesArray: resultDict?["list"])
                 print(listAry)
