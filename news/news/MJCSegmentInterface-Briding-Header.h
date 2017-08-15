@@ -10,4 +10,6 @@
 #define MJCSegmentInterface_Briding_Header_h
 //这里是引用oc的都三方 但是这里需要注意的是不能直接引入.h文件 否则报错  需要引入前面的文件夹名
 #import "MJCSegmentInterface/MJCSegmentInterface.h"
+#import "MJExtension/MJExtension.h"
+#import "TQYRMainListModel.h"
 #endif /* MJCSegmentInterface_Briding_Header_h */

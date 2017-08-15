@@ -7,5 +7,6 @@ use_frameworks!
 target 'news' do
 
 pod 'Alamofire' 
-pod 'MJCSegmentInterface' 
+pod 'MJCSegmentInterface'
+pod 'MJExtension'
 end

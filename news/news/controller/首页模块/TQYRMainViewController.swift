@@ -16,34 +16,36 @@ class TQYRMainViewController: UIViewController {
         
         let main_toutiao = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
         main_toutiao.keyStr = "toutiao"
-        let main_yule = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
-        main_yule.keyStr = "yule"
-        let main_tiyu = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
-        main_tiyu.keyStr = "tiyu"
+        let main_xinwen = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
+        main_xinwen.keyStr = "xinwen"
         let main_caijing = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
         main_caijing.keyStr = "caijing"
-        let main_keji = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
-        main_keji.keyStr = "keji"
-        let main_qiche = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
-        main_qiche.keyStr = "qiche"
-        let main_shehui = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
-        main_shehui.keyStr = "shehui"
+        let main_tiyu = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
+        main_tiyu.keyStr = "tiyu"
+        let main_yule = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
+        main_yule.keyStr = "yule"
         let main_junshi = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
         main_junshi.keyStr = "junshi"
-        let main_shishang = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
-        main_shishang.keyStr = "shishang"
-        let main_fangchan = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
-        main_fangchan.keyStr = "fangchan"
-        let main_lishi = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
-        main_lishi.keyStr = "lishi"
-        let main_jiaju = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
-        main_jiaju.keyStr = "jiaju"
+        let main_jiaoyu = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
+        main_jiaoyu.keyStr = "jiaoyu"
+        let main_keji = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
+        main_keji.keyStr = "keji"
+        let main_NBA = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
+        main_NBA.keyStr = "NBA"
+        let main_gupiao = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
+        main_gupiao.keyStr = "gupiao"
+        let main_xingzuo = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
+        main_xingzuo.keyStr = "xingzuo"
+        let main_nvxing = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
+        main_nvxing.keyStr = "nvxing"
         let main_jiankang = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
         main_jiankang.keyStr = "jiankang"
+        let main_yuer = TQYRMainTableViewController.init(style: UITableViewStyle.plain)
+        main_yuer.keyStr = "yuer"
         
-        let mainControllerAry = [main_toutiao,main_yule,main_tiyu,main_caijing,main_keji,main_qiche,main_shehui,main_junshi,main_shishang,main_fangchan,main_lishi,main_jiaju,main_jiankang]
+        let mainControllerAry = [main_toutiao,main_xinwen,main_caijing,main_tiyu,main_yule,main_junshi,main_jiaoyu,main_keji,main_NBA,main_gupiao,main_xingzuo,main_nvxing,main_jiankang,main_yuer]
       
-        let mainControllerTitleAry = ["头条","娱乐","体育","财经","科技","汽车","社会","军事","时尚","房产","历史","家具","健康"]
+        let mainControllerTitleAry = ["头条","新闻","财经","体育","娱乐","军事","教育","科技","NBA","股票","星座","女性","健康","育儿"]
         //  准备工作做好之后,接来下实例化我的控件
         let segmentsface = MJCSegmentInterface.init()
         segmentsface.itemTextNormalColor = UIColor .gray

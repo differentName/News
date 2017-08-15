@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		14AD7BF1B567043293E53CB7 /* Pods_news.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 202F7FFF9EE1B62AD637CD4B /* Pods_news.framework */; };
-		3E01644F1F41945B006B63B0 /* TQYRMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E01644E1F41945B006B63B0 /* TQYRMainTableViewController.swift */; };
 		3E0164531F419639006B63B0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E0164521F419639006B63B0 /* Alamofire.framework */; };
-		3E01645A1F41A269006B63B0 /* TQYRMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0164591F41A269006B63B0 /* TQYRMainViewController.swift */; };
 		3E7B3E321F41214800242993 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B3E311F41214800242993 /* AppDelegate.swift */; };
 		3E7B3E341F41214800242993 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B3E331F41214800242993 /* ViewController.swift */; };
 		3E7B3E371F41214800242993 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7B3E351F41214800242993 /* Main.storyboard */; };
@@ -18,6 +16,12 @@
 		3E7B3E3C1F41214800242993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7B3E3A1F41214800242993 /* LaunchScreen.storyboard */; };
 		3E7B3E471F41214800242993 /* newsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B3E461F41214800242993 /* newsTests.swift */; };
 		3E7B3E521F41214800242993 /* newsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B3E511F41214800242993 /* newsUITests.swift */; };
+		E62240B41F420B2C00D98BA0 /* TQYRMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62240B01F420B2C00D98BA0 /* TQYRMainTableViewController.swift */; };
+		E62240B51F420B2C00D98BA0 /* TQYRMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62240B11F420B2C00D98BA0 /* TQYRMainViewController.swift */; };
+		E62240B81F420B4600D98BA0 /* TQYRMainListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E62240B71F420B4600D98BA0 /* TQYRMainListModel.m */; };
+		E62240BA1F420C9F00D98BA0 /* MJExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E62240B91F420C9F00D98BA0 /* MJExtension.framework */; };
+		E62240BC1F420CA300D98BA0 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E62240BB1F420CA300D98BA0 /* SDWebImage.framework */; };
+		E62240BE1F420CA800D98BA0 /* MJCSegmentInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E62240BD1F420CA800D98BA0 /* MJCSegmentInterface.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +44,9 @@
 /* Begin PBXFileReference section */
 		202F7FFF9EE1B62AD637CD4B /* Pods_news.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_news.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21746D813855E9AB8648F754 /* Pods-news.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-news.release.xcconfig"; path = "Pods/Target Support Files/Pods-news/Pods-news.release.xcconfig"; sourceTree = "<group>"; };
-		3E01644E1F41945B006B63B0 /* TQYRMainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQYRMainTableViewController.swift; sourceTree = "<group>"; };
 		3E0164501F4194A8006B63B0 /* libMagicalRecord.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMagicalRecord.a; path = "../../../Library/Developer/Xcode/DerivedData/news-efyhyrzxvhoccxctdilijhvnfbqc/Build/Products/Debug-iphonesimulator/MagicalRecord/libMagicalRecord.a"; sourceTree = "<group>"; };
 		3E0164521F419639006B63B0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/news-efyhyrzxvhoccxctdilijhvnfbqc/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		3E0164571F419EA9006B63B0 /* MJCSegmentInterface-Briding-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MJCSegmentInterface-Briding-Header.h"; sourceTree = "<group>"; };
-		3E0164591F41A269006B63B0 /* TQYRMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQYRMainViewController.swift; sourceTree = "<group>"; };
 		3E7B3E2E1F41214800242993 /* news.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = news.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7B3E311F41214800242993 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E7B3E331F41214800242993 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,13 @@
 		3E7B3E4D1F41214800242993 /* newsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7B3E511F41214800242993 /* newsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsUITests.swift; sourceTree = "<group>"; };
 		3E7B3E531F41214800242993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E62240B01F420B2C00D98BA0 /* TQYRMainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQYRMainTableViewController.swift; sourceTree = "<group>"; };
+		E62240B11F420B2C00D98BA0 /* TQYRMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQYRMainViewController.swift; sourceTree = "<group>"; };
+		E62240B61F420B4600D98BA0 /* TQYRMainListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQYRMainListModel.h; sourceTree = "<group>"; };
+		E62240B71F420B4600D98BA0 /* TQYRMainListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQYRMainListModel.m; sourceTree = "<group>"; };
+		E62240B91F420C9F00D98BA0 /* MJExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MJExtension.framework; path = "Pods/../build/Debug-iphoneos/MJExtension/MJExtension.framework"; sourceTree = "<group>"; };
+		E62240BB1F420CA300D98BA0 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "../../../Library/Developer/Xcode/DerivedData/news-frmdfggtdqzjtobnvgabqcwweoaw/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework"; sourceTree = "<group>"; };
+		E62240BD1F420CA800D98BA0 /* MJCSegmentInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MJCSegmentInterface.framework; path = "../../../Library/Developer/Xcode/DerivedData/news-frmdfggtdqzjtobnvgabqcwweoaw/Build/Products/Debug-iphonesimulator/MJCSegmentInterface/MJCSegmentInterface.framework"; sourceTree = "<group>"; };
 		FDC245363A0BB3927DFA14A5 /* Pods-news.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-news.debug.xcconfig"; path = "Pods/Target Support Files/Pods-news/Pods-news.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +75,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E62240BE1F420CA800D98BA0 /* MJCSegmentInterface.framework in Frameworks */,
+				E62240BC1F420CA300D98BA0 /* SDWebImage.framework in Frameworks */,
+				E62240BA1F420C9F00D98BA0 /* MJExtension.framework in Frameworks */,
 				3E0164531F419639006B63B0 /* Alamofire.framework in Frameworks */,
 				14AD7BF1B567043293E53CB7 /* Pods_news.framework in Frameworks */,
 			);
@@ -113,6 +125,8 @@
 		3E7B3E301F41214800242993 /* news */ = {
 			isa = PBXGroup;
 			children = (
+				E62240AE1F420B2C00D98BA0 /* controller */,
+				E62240B21F420B2C00D98BA0 /* model */,
 				3E7B3E311F41214800242993 /* AppDelegate.swift */,
 				3E0164571F419EA9006B63B0 /* MJCSegmentInterface-Briding-Header.h */,
 				3E7B3E331F41214800242993 /* ViewController.swift */,
@@ -120,8 +134,6 @@
 				3E7B3E381F41214800242993 /* Assets.xcassets */,
 				3E7B3E3A1F41214800242993 /* LaunchScreen.storyboard */,
 				3E7B3E3D1F41214800242993 /* Info.plist */,
-				3E01644E1F41945B006B63B0 /* TQYRMainTableViewController.swift */,
-				3E0164591F41A269006B63B0 /* TQYRMainViewController.swift */,
 			);
 			path = news;
 			sourceTree = "<group>";
@@ -147,6 +159,9 @@
 		7AE5707B894190370CE3FF83 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E62240BD1F420CA800D98BA0 /* MJCSegmentInterface.framework */,
+				E62240BB1F420CA300D98BA0 /* SDWebImage.framework */,
+				E62240B91F420C9F00D98BA0 /* MJExtension.framework */,
 				3E0164521F419639006B63B0 /* Alamofire.framework */,
 				3E0164501F4194A8006B63B0 /* libMagicalRecord.a */,
 				202F7FFF9EE1B62AD637CD4B /* Pods_news.framework */,
@@ -161,6 +176,40 @@
 				21746D813855E9AB8648F754 /* Pods-news.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E62240AE1F420B2C00D98BA0 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E62240AF1F420B2C00D98BA0 /* 首页模块 */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E62240AF1F420B2C00D98BA0 /* 首页模块 */ = {
+			isa = PBXGroup;
+			children = (
+				E62240B01F420B2C00D98BA0 /* TQYRMainTableViewController.swift */,
+				E62240B11F420B2C00D98BA0 /* TQYRMainViewController.swift */,
+			);
+			path = "首页模块";
+			sourceTree = "<group>";
+		};
+		E62240B21F420B2C00D98BA0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E62240B31F420B2C00D98BA0 /* 首页model */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E62240B31F420B2C00D98BA0 /* 首页model */ = {
+			isa = PBXGroup;
+			children = (
+				E62240B61F420B4600D98BA0 /* TQYRMainListModel.h */,
+				E62240B71F420B4600D98BA0 /* TQYRMainListModel.m */,
+			);
+			path = "首页model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,9 +352,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-news/Pods-news-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MJCSegmentInterface/MJCSegmentInterface.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJCSegmentInterface.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -333,13 +391,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-news-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -349,10 +410,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E01644F1F41945B006B63B0 /* TQYRMainTableViewController.swift in Sources */,
+				E62240B41F420B2C00D98BA0 /* TQYRMainTableViewController.swift in Sources */,
 				3E7B3E341F41214800242993 /* ViewController.swift in Sources */,
 				3E7B3E321F41214800242993 /* AppDelegate.swift in Sources */,
-				3E01645A1F41A269006B63B0 /* TQYRMainViewController.swift in Sources */,
+				E62240B81F420B4600D98BA0 /* TQYRMainListModel.m in Sources */,
+				E62240B51F420B2C00D98BA0 /* TQYRMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +570,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 83QJKJUUMN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/MJExtension",
+				);
 				INFOPLIST_FILE = news/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -524,6 +590,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 83QJKJUUMN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/MJExtension",
+				);
 				INFOPLIST_FILE = news/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
