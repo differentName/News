@@ -8,15 +8,18 @@
 
 import UIKit
 import Alamofire
-
 class TQYRMainTableViewController: UITableViewController {
     var keyStr = ""
     let typeAry = ["头条","新闻","财经","体育","娱乐","军事","教育","科技","NBA","股票","星座","女性","健康","育儿"]
-    
+    var listAry :NSMutableArray = NSMutableArray.init()
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tool:TQYRTool = TQYRTool.init()
+        tool.showLoadingImg(controller: self)
         reloadDataWithKeyString(keyStr: keyStr)
         requestNewDataWithType(type: 0)
+        
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -35,31 +38,54 @@ class TQYRMainTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 2
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 20
+        if section == 0 {
+            return 1
+        }else{
+            return self.listAry.count
+        }
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier")
-        if (cell == nil) {
-            cell = UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: "reuseIdentifier")
+        if indexPath.section == 0 {
+            var cell = tableView.dequeueReusableCell(withIdentifier: "MainTopCell")
+            if (cell == nil) {
+                cell = UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: "MainTopCell")
+            }
+            cell?.backgroundColor = UIColor.red
+            cell?.textLabel?.text = String(indexPath.row)
+            
+            return cell!
+        }else{
+            
+            var cell = tableView.dequeueReusableCell(withIdentifier: "TQYRPicListTableViewCell")  as? TQYRPicListTableViewCell
+            if tableView.dequeueReusableCell(withIdentifier: "TQYRPicListTableViewCell") == nil {
+                cell = Bundle.main.loadNibNamed("TQYRPicListTableViewCell", owner: self, options: nil)?.first as? TQYRPicListTableViewCell
+            }
+            let model : TQYRMainListModel  = self.listAry[indexPath.row] as! TQYRMainListModel
+            
+            cell?.title.text = model.title
+            
+            return cell!
         }
-        cell?.backgroundColor = UIColor.red
-        cell?.textLabel?.text = String(indexPath.row)
-
-        return cell!
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
       
     }
     
-
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 0 {
+            return 120
+        }else{
+            return 225
+        }
+    }
+    
 
     func reloadDataWithKeyString(keyStr :String) {
         switch keyStr {
@@ -119,23 +145,11 @@ class TQYRMainTableViewController: UITableViewController {
                 print("JSON: \(json)") // serialized json response
                 
                 let resultDict = json["result"] as? NSDictionary
-              let listAry =  TQYRMainListModel.mj_objectArray(withKeyValuesArray: resultDict?["list"])
-                print(listAry)
+              self.listAry =  TQYRMainListModel.mj_objectArray(withKeyValuesArray: resultDict?["list"])
+                self.tableView.reloadData()
+                print(self.listAry)
             }
         }
-        
-    }
-    
-    func getDictionaryFromJSONString(jsonString:String) ->NSDictionary{
-        
-        let jsonData:Data = jsonString.data(using: .utf8)!
-        
-        let dict = try? JSONSerialization.jsonObject(with: jsonData, options: .mutableContainers)
-        if dict != nil {
-            return dict as! NSDictionary
-        }
-        return NSDictionary()
-        
         
     }
     

@@ -53,7 +53,7 @@ class TQYRMainViewController: UIViewController {
         segmentsface.indicatorHidden = true
         segmentsface.isFontGradient = true
         segmentsface.isChildScollAnimal = false
-        segmentsface.frame = CGRect.init(x: 0, y: 64, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height-64)
+        segmentsface.frame = CGRect.init(x: 0, y: 64, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height-108)
     segmentsface.intoTitlesArray(mainControllerTitleAry, hostController: self)
         segmentsface.intoChildControllerArray(mainControllerAry)
         self.view.addSubview(segmentsface)
