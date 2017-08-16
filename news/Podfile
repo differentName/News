@@ -9,4 +9,5 @@ target 'news' do
 pod 'Alamofire' 
 pod 'MJCSegmentInterface'
 pod 'MJExtension'
+pod 'MJRefresh'
 end

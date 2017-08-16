@@ -12,4 +12,5 @@
 #import "MJCSegmentInterface/MJCSegmentInterface.h"
 #import "MJExtension/MJExtension.h"
 #import "TQYRMainListModel.h"
+#import "MJRefresh/MJRefresh.h"
 #endif /* MJCSegmentInterface_Briding_Header_h */
