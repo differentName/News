@@ -29,11 +29,11 @@
             </objects>
             <point key="canvasLocation" x="-1548" y="-154"/>
         </scene>
-        <!--Item-->
+        <!--news-->
         <scene sceneID="FBn-2O-FSu">
             <objects>
                 <navigationController id="8Z2-7e-RvX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="fqh-Dk-e4J"/>
+                    <tabBarItem key="tabBarItem" title="news" image="tab_news" id="fqh-Dk-e4J"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uz1-89-gAY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -94,11 +94,11 @@
             </objects>
             <point key="canvasLocation" x="438" y="-490"/>
         </scene>
-        <!--Item-->
+        <!--图集-->
         <scene sceneID="55r-xT-BAh">
             <objects>
                 <navigationController id="Elm-oG-rmk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="vK5-T9-RnR"/>
+                    <tabBarItem key="tabBarItem" title="图集" image="tab_pic" id="vK5-T9-RnR"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nRF-e8-rtR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -140,11 +140,11 @@
             </objects>
             <point key="canvasLocation" x="438" y="163"/>
         </scene>
-        <!--Item-->
+        <!--视频-->
         <scene sceneID="u0N-mY-98a">
             <objects>
                 <navigationController id="qCW-3N-Xmd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="sAW-vl-RaF"/>
+                    <tabBarItem key="tabBarItem" title="视频" image="tab_video" id="sAW-vl-RaF"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gRm-nT-OaE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -186,11 +186,11 @@
             </objects>
             <point key="canvasLocation" x="438" y="982"/>
         </scene>
-        <!--Item-->
+        <!--我的-->
         <scene sceneID="2PD-ei-Byj">
             <objects>
                 <navigationController id="tAQ-qO-wRz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Nqh-Fd-B4G"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="tab_home" id="Nqh-Fd-B4G"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IZw-4M-Gq4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -204,4 +204,10 @@
             <point key="canvasLocation" x="-442" y="982"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tab_home" width="24" height="21"/>
+        <image name="tab_news" width="24" height="17"/>
+        <image name="tab_pic" width="24" height="22"/>
+        <image name="tab_video" width="24" height="19"/>
+    </resources>
 </document>
