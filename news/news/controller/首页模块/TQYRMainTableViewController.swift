@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 import MJRefresh
-class TQYRMainTableViewController: UITableViewController {
+class TQYRMainTableViewController: UITableViewController,WRCycleScrollViewDelegate{//遵循代理
     var keyStr = ""
     var currentKeyStr = "头条"
     var currentIndex = 0
@@ -18,7 +18,11 @@ class TQYRMainTableViewController: UITableViewController {
     var page = 1
     
     
+    var cycleScrollView:WRCycleScrollView?
+    
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         TQYRTool.showLoadingImg(controller: self)
@@ -34,13 +38,6 @@ class TQYRMainTableViewController: UITableViewController {
         self.tableView.mj_footer = MJRefreshAutoNormalFooter.init(refreshingBlock: {
             self.loadMoreDataWithType(type: self.currentIndex)
         })
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -91,12 +88,12 @@ class TQYRMainTableViewController: UITableViewController {
                 serverImages.add(tempModel.pic)
                 descs.add(tempModel.title)
             }
-            let cycleScrollView : WRCycleScrollView = WRCycleScrollView(frame: CGRect.init(x: 0, y: 0, width: self.view.frame.size.width, height: 150), type: .SERVER, imgs: serverImages as? [String])
-            cycleScrollView.imageContentModel = UIViewContentMode.scaleToFill
-            cycleScrollView.tag = 9528
-            cycleScrollView.descTextArray = descs as? [String]
-            cell?.contentView.addSubview(cycleScrollView)
-            cycleScrollView.delegate = self as? WRCycleScrollViewDelegate
+            cycleScrollView = WRCycleScrollView(frame: CGRect.init(x: 0, y: 0, width: self.view.frame.size.width, height: 150), type: .SERVER, imgs: serverImages as? [String])
+            cycleScrollView!.delegate = self
+            cycleScrollView?.imageContentModel = UIViewContentMode.scaleToFill
+            cycleScrollView?.tag = 9528
+            cycleScrollView?.descTextArray = descs as? [String]
+            cell?.contentView.addSubview(cycleScrollView!)
 
             return cell!
         }else{
@@ -111,7 +108,6 @@ class TQYRMainTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
       
     }
-    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
             return 150

@@ -46,7 +46,7 @@ class TQYRMainViewController: UIViewController {
         let mainControllerAry = [main_toutiao,main_xinwen,main_caijing,main_tiyu,main_yule,main_junshi,main_jiaoyu,main_keji,main_NBA,main_gupiao,main_xingzuo,main_nvxing,main_jiankang,main_yuer]
       
         let mainControllerTitleAry = ["头条","新闻","财经","体育","娱乐","军事","教育","科技","NBA","股票","星座","女性","健康","育儿"]
-        //  准备工作做好之后,接来下实例化我的控件
+        //  
         let segmentsface = MJCSegmentInterface.init()
         segmentsface.itemTextNormalColor = UIColor .gray
         segmentsface.itemTextSelectedColor = UIColor.red
