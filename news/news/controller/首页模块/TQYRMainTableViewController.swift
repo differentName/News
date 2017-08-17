@@ -12,8 +12,11 @@ import MJRefresh
 class TQYRMainTableViewController: UITableViewController {
     var keyStr = ""
     var currentKeyStr = "头条"
+    var currentIndex = 0
     let typeAry = ["头条","新闻","财经","体育","娱乐","军事","教育","科技","NBA","股票","星座","女性","健康","育儿"]
     var listAry :NSMutableArray = NSMutableArray.init()
+    var page = 1
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +30,9 @@ class TQYRMainTableViewController: UITableViewController {
         
         self.tableView.mj_header = MJRefreshNormalHeader.init(refreshingBlock: { 
             self.reloadDataWithKeyString(keyStr: self.currentKeyStr)
+        })
+        self.tableView.mj_footer = MJRefreshAutoNormalFooter.init(refreshingBlock: {
+            self.loadMoreDataWithType(type: self.currentIndex)
         })
 
         // Uncomment the following line to preserve selection between presentations
@@ -68,18 +74,36 @@ class TQYRMainTableViewController: UITableViewController {
             if (cell == nil) {
                 cell = UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: "MainTopCell")
             }
-            cell?.backgroundColor = UIColor.red
-            cell?.textLabel?.text = String(indexPath.row)
+            if ((cell?.contentView.viewWithTag(9528)) != nil) {
+                cell?.contentView.viewWithTag(9528)?.removeFromSuperview()
+            }
+            cell?.backgroundColor = UIColor.init(red: 250/255.0, green: 250/255.0, blue: 250/255.0, alpha: 1.0)
+            let serverImages : NSMutableArray = NSMutableArray.init()
+            let descs : NSMutableArray = NSMutableArray.init()
+            var tempAry : NSArray = NSArray.init()
             
+            if self.listAry.count>3 {
+                tempAry = self.listAry.subarray(with: NSRange.init(location: 0, length: 3)) as NSArray
+            }
+            //swift 中的for循环
+            for i in 0...2 {
+                let tempModel : TQYRMainListModel = tempAry[i] as! TQYRMainListModel
+                serverImages.add(tempModel.pic)
+                descs.add(tempModel.title)
+            }
+            let cycleScrollView : WRCycleScrollView = WRCycleScrollView(frame: CGRect.init(x: 0, y: 0, width: self.view.frame.size.width, height: 150), type: .SERVER, imgs: serverImages as? [String])
+            cycleScrollView.imageContentModel = UIViewContentMode.scaleToFill
+            cycleScrollView.tag = 9528
+            cycleScrollView.descTextArray = descs as? [String]
+            cell?.contentView.addSubview(cycleScrollView)
+            cycleScrollView.delegate = self as? WRCycleScrollViewDelegate
+
             return cell!
         }else{
-            let cell :  TQYRPicListTableViewCell = TQYRPicListTableViewCell.creatCellWithTableview(tableView: tableView)
+            let cell :  TQYRMainListTableViewCell = TQYRMainListTableViewCell.creatCellWithTableview(tableView: tableView)
             
             let model : TQYRMainListModel  = self.listAry[indexPath.row] as! TQYRMainListModel
-            
-//            cell.model = model
-            cell.textLabel?.text = model.title
-            
+            cell.model = model
             return cell
         }
     }
@@ -90,9 +114,9 @@ class TQYRMainTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
-            return 120
+            return 150
         }else{
-            return 225
+            return 110
         }
     }
     
@@ -101,58 +125,72 @@ class TQYRMainTableViewController: UITableViewController {
         switch keyStr {
             case "toutiao":
                 currentKeyStr = "toutiao"
+                currentIndex = 0
                 requestNewDataWithType(type: 0)
                 print("toutiao")
             case "xinwen":
                 currentKeyStr = "xinwen"
+                currentIndex = 1
                 requestNewDataWithType(type: 1)
                 print("xinwen")
             case "caijing":
                 currentKeyStr = "caijing"
+                currentIndex = 2
                 requestNewDataWithType(type: 2)
                 print("caijing")
             case "tiyu":
                 currentKeyStr = "tiyu"
+                currentIndex = 3
                 requestNewDataWithType(type: 3)
                 print("tiyu")
             case "yule":
                 currentKeyStr = "yule"
+                currentIndex = 4
                 requestNewDataWithType(type: 4)
                 print("yule")
             case "junshi":
                 currentKeyStr = "junshi"
+                currentIndex = 5
                 requestNewDataWithType(type: 5)
                 print("junshi")
             case "jiaoyu":
                 currentKeyStr = "jiaoyu"
+                currentIndex = 6
                 requestNewDataWithType(type: 6)
                 print("jiaoyu")
             case "keji":
                 currentKeyStr = "keji"
+                currentIndex = 7
                 requestNewDataWithType(type: 7)
                 print("keji")
             case "NBA":
                 currentKeyStr = "NBA"
+                currentIndex = 8
                 requestNewDataWithType(type: 8)
                 print("NBA")
             case "gupiao":
                 currentKeyStr = "gupiao"
+                currentIndex = 9
                 requestNewDataWithType(type: 9)
                 print("gupiao")
             case "xingzuo":
                 currentKeyStr = "xingzuo"
+                currentIndex = 10
                 requestNewDataWithType(type: 10)
                 print("xingzuo")
             case "nvxing":
                 currentKeyStr = "nvxing"
+                currentIndex = 11
                 requestNewDataWithType(type: 11)
                 print("nvxing")
             case "jiankang":
                 currentKeyStr = "nvxing"
+                currentIndex = 12
                 requestNewDataWithType(type: 12)
                 print("jiankang")
             case "yuer":
                 currentKeyStr = "yuer"
+                currentIndex = 13
                 requestNewDataWithType(type: 13)
                 print("yuer")
             default:break
@@ -172,6 +210,7 @@ class TQYRMainTableViewController: UITableViewController {
                     TQYRTool.dismissLoadingImg(controller: self)
                     TQYRTool.showNodataImg(type: "wangluo", controller: self)
                     self.tableView.mj_header.endRefreshing()
+                    self.page = 1
                     return
                 }else{
                     TQYRTool.dismissNoDataImg(controller: self)
@@ -187,11 +226,58 @@ class TQYRMainTableViewController: UITableViewController {
                 }
                 print(self.listAry)
                 self.tableView.mj_header.endRefreshing()
+                self.page = 1
             }
         }
         
     }
     
     
+    func loadMoreDataWithType(type : Int)  {
+        Alamofire.request("http://api.jisuapi.com/news/get",parameters: ["channel": typeAry[type],"appkey":"0a4d2c1f8257519d","start":page*20]).responseJSON { response in
+            //请求成功
+            //as? NSDictionary 因为json被当做一个any类型 无法当做字典取值 所以 需要将any转换为字典类型  通过as  注意NSDictionary不能用Dictionary替换
+            if let json = response.result.value as? NSDictionary {
+                print("JSON: \(json)") // serialized json response
+                if (json["status"] as! String != "0"){//请求有问题
+                    TQYRTool.dismissLoadingImg(controller: self)
+                    TQYRTool.showNodataImg(type: "wangluo", controller: self)
+                    self.tableView.mj_footer.endRefreshing()
+                    return
+                }else{
+                    TQYRTool.dismissNoDataImg(controller: self)
+                }
+                let resultDict = json["result"] as? NSDictionary
+                let tempAry : NSArray =  TQYRMainListModel.mj_objectArray(withKeyValuesArray: resultDict?["list"])
+                TQYRTool.dismissLoadingImg(controller: self)
+                if(tempAry.count == 0){
+                    TQYRTool.showNodataImg(type: "shuju", controller: self)
+                }else{
+                    TQYRTool.dismissNoDataImg(controller: self)
+                    self.page += 1
+                    self.listAry.addObjects(from: tempAry as! [Any])
+                    self.tableView.reloadData()
+                }
+                print(self.listAry)
+                self.tableView.mj_footer.endRefreshing()
+            }
+        }
 
+    }
+    
+  
+}
+//轮播图的点击代理时间
+extension TQYRMainViewController: WRCycleScrollViewDelegate
+{
+    /// 点击图片事件
+    func cycleScrollViewDidSelect(at index:Int, cycleScrollView:WRCycleScrollView)
+    {
+        print("点击了第\(index+1)个图片")
+    }
+    /// 图片滚动事件
+    func cycleScrollViewDidScroll(to index:Int, cycleScrollView:WRCycleScrollView)
+    {
+        print("滚动到了第\(index+1)个图片")
+    }
 }

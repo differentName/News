@@ -10,4 +10,5 @@ pod 'Alamofire'
 pod 'MJCSegmentInterface'
 pod 'MJExtension'
 pod 'MJRefresh'
+pod ‘Kingfisher’
 end

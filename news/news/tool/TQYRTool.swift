@@ -40,7 +40,7 @@ class TQYRTool: NSObject {
         
         loadingImgView.image = #imageLiteral(resourceName: "Oval")
         addRotationAnim(loadingImgView: loadingImgView)
-        loadingImgView.center = CGPoint.init(x: controller.view.center.x, y: controller.view.center.y-80)
+        loadingImgView.center = CGPoint.init(x: controller.view.center.x, y: controller.view.center.y-90)
 
         controller.view.addSubview(loadingImgView)
         
@@ -75,7 +75,7 @@ class TQYRTool: NSObject {
         
         // 2.设置动画的属性
         rotationAnim.fromValue = 0
-        rotationAnim.toValue = M_PI * 2
+        rotationAnim.toValue = Double.pi * 2
         rotationAnim.repeatCount = MAXFLOAT
         rotationAnim.duration = 0.8 //多长时间转一圈
         // 这个属性很重要 如果不设置当页面运行到后台再次进入该页面的时候 动画会停止

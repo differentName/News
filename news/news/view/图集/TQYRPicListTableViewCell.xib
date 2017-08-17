@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="223.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderImage" translatesAutoresizingMaskIntoConstraints="NO" id="Bsb-qA-a2B">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placehoder_img" translatesAutoresizingMaskIntoConstraints="NO" id="Bsb-qA-a2B">
                         <rect key="frame" x="30" y="8" width="260" height="120"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="120" id="a2R-LS-XQy"/>
@@ -96,6 +96,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="placeholderImage" width="54" height="54"/>
+        <image name="placehoder_img" width="215" height="120"/>
     </resources>
 </document>

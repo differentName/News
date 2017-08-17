@@ -16,8 +16,6 @@
 		3E7B3E3C1F41214800242993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7B3E3A1F41214800242993 /* LaunchScreen.storyboard */; };
 		3E7B3E471F41214800242993 /* newsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B3E461F41214800242993 /* newsTests.swift */; };
 		3E7B3E521F41214800242993 /* newsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B3E511F41214800242993 /* newsUITests.swift */; };
-		3EFDE9E71F42E7CF005337A4 /* TQYRPicListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFDE9E51F42E7CF005337A4 /* TQYRPicListTableViewCell.swift */; };
-		3EFDE9E81F42E7CF005337A4 /* TQYRPicListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EFDE9E61F42E7CF005337A4 /* TQYRPicListTableViewCell.xib */; };
 		3EFDEA461F431877005337A4 /* TQYRTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFDEA451F431877005337A4 /* TQYRTool.swift */; };
 		E62240B41F420B2C00D98BA0 /* TQYRMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62240B01F420B2C00D98BA0 /* TQYRMainTableViewController.swift */; };
 		E62240B51F420B2C00D98BA0 /* TQYRMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62240B11F420B2C00D98BA0 /* TQYRMainViewController.swift */; };
@@ -25,6 +23,13 @@
 		E62240BA1F420C9F00D98BA0 /* MJExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E62240B91F420C9F00D98BA0 /* MJExtension.framework */; };
 		E62240BC1F420CA300D98BA0 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E62240BB1F420CA300D98BA0 /* SDWebImage.framework */; };
 		E62240BE1F420CA800D98BA0 /* MJCSegmentInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E62240BD1F420CA800D98BA0 /* MJCSegmentInterface.framework */; };
+		E68E8D581F45137F00D7BF9F /* TQYRPicListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E8D561F45137F00D7BF9F /* TQYRPicListTableViewCell.swift */; };
+		E68E8D591F45137F00D7BF9F /* TQYRPicListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E68E8D571F45137F00D7BF9F /* TQYRPicListTableViewCell.xib */; };
+		E68E8D5C1F45139800D7BF9F /* TQYRMainListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E8D5A1F45139800D7BF9F /* TQYRMainListTableViewCell.swift */; };
+		E68E8D5D1F45139800D7BF9F /* TQYRMainListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E68E8D5B1F45139800D7BF9F /* TQYRMainListTableViewCell.xib */; };
+		E68E8D621F4526DE00D7BF9F /* WRCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E8D5F1F4526DE00D7BF9F /* WRCycleCell.swift */; };
+		E68E8D631F4526DE00D7BF9F /* WRCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E8D601F4526DE00D7BF9F /* WRCycleScrollView.swift */; };
+		E68E8D641F4526DE00D7BF9F /* WRProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E8D611F4526DE00D7BF9F /* WRProxy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +68,6 @@
 		3E7B3E4D1F41214800242993 /* newsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7B3E511F41214800242993 /* newsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsUITests.swift; sourceTree = "<group>"; };
 		3E7B3E531F41214800242993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3EFDE9E51F42E7CF005337A4 /* TQYRPicListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQYRPicListTableViewCell.swift; sourceTree = "<group>"; };
-		3EFDE9E61F42E7CF005337A4 /* TQYRPicListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TQYRPicListTableViewCell.xib; sourceTree = "<group>"; };
 		3EFDEA451F431877005337A4 /* TQYRTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQYRTool.swift; sourceTree = "<group>"; };
 		E62240B01F420B2C00D98BA0 /* TQYRMainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQYRMainTableViewController.swift; sourceTree = "<group>"; };
 		E62240B11F420B2C00D98BA0 /* TQYRMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQYRMainViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +76,13 @@
 		E62240B91F420C9F00D98BA0 /* MJExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MJExtension.framework; path = "Pods/../build/Debug-iphoneos/MJExtension/MJExtension.framework"; sourceTree = "<group>"; };
 		E62240BB1F420CA300D98BA0 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "../../../Library/Developer/Xcode/DerivedData/news-frmdfggtdqzjtobnvgabqcwweoaw/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework"; sourceTree = "<group>"; };
 		E62240BD1F420CA800D98BA0 /* MJCSegmentInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MJCSegmentInterface.framework; path = "../../../Library/Developer/Xcode/DerivedData/news-frmdfggtdqzjtobnvgabqcwweoaw/Build/Products/Debug-iphonesimulator/MJCSegmentInterface/MJCSegmentInterface.framework"; sourceTree = "<group>"; };
+		E68E8D561F45137F00D7BF9F /* TQYRPicListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQYRPicListTableViewCell.swift; sourceTree = "<group>"; };
+		E68E8D571F45137F00D7BF9F /* TQYRPicListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TQYRPicListTableViewCell.xib; sourceTree = "<group>"; };
+		E68E8D5A1F45139800D7BF9F /* TQYRMainListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQYRMainListTableViewCell.swift; sourceTree = "<group>"; };
+		E68E8D5B1F45139800D7BF9F /* TQYRMainListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TQYRMainListTableViewCell.xib; sourceTree = "<group>"; };
+		E68E8D5F1F4526DE00D7BF9F /* WRCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleCell.swift; sourceTree = "<group>"; };
+		E68E8D601F4526DE00D7BF9F /* WRCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleScrollView.swift; sourceTree = "<group>"; };
+		E68E8D611F4526DE00D7BF9F /* WRProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRProxy.swift; sourceTree = "<group>"; };
 		FDC245363A0BB3927DFA14A5 /* Pods-news.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-news.debug.xcconfig"; path = "Pods/Target Support Files/Pods-news/Pods-news.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,9 +178,10 @@
 		3EFDE9E31F42E7AE005337A4 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				E68E8D521F450F7300D7BF9F /* 视频 */,
+				E68E8D541F450F7300D7BF9F /* 图集 */,
+				E68E8D551F450F7300D7BF9F /* 我的 */,
 				3EFDE9E41F42E7AE005337A4 /* 首页 */,
-				3EFDE9E51F42E7CF005337A4 /* TQYRPicListTableViewCell.swift */,
-				3EFDE9E61F42E7CF005337A4 /* TQYRPicListTableViewCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -178,6 +189,8 @@
 		3EFDE9E41F42E7AE005337A4 /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				E68E8D5A1F45139800D7BF9F /* TQYRMainListTableViewCell.swift */,
+				E68E8D5B1F45139800D7BF9F /* TQYRMainListTableViewCell.xib */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -185,6 +198,7 @@
 		3EFDE9E91F430838005337A4 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				E68E8D5E1F4526DE00D7BF9F /* WRCycleScrollView */,
 			);
 			path = other;
 			sourceTree = "<group>";
@@ -251,6 +265,39 @@
 				E62240B71F420B4600D98BA0 /* TQYRMainListModel.m */,
 			);
 			path = "首页model";
+			sourceTree = "<group>";
+		};
+		E68E8D521F450F7300D7BF9F /* 视频 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "视频";
+			sourceTree = "<group>";
+		};
+		E68E8D541F450F7300D7BF9F /* 图集 */ = {
+			isa = PBXGroup;
+			children = (
+				E68E8D561F45137F00D7BF9F /* TQYRPicListTableViewCell.swift */,
+				E68E8D571F45137F00D7BF9F /* TQYRPicListTableViewCell.xib */,
+			);
+			path = "图集";
+			sourceTree = "<group>";
+		};
+		E68E8D551F450F7300D7BF9F /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		E68E8D5E1F4526DE00D7BF9F /* WRCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				E68E8D5F1F4526DE00D7BF9F /* WRCycleCell.swift */,
+				E68E8D601F4526DE00D7BF9F /* WRCycleScrollView.swift */,
+				E68E8D611F4526DE00D7BF9F /* WRProxy.swift */,
+			);
+			path = WRCycleScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,9 +411,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E68E8D591F45137F00D7BF9F /* TQYRPicListTableViewCell.xib in Resources */,
 				3E7B3E3C1F41214800242993 /* LaunchScreen.storyboard in Resources */,
 				3E7B3E391F41214800242993 /* Assets.xcassets in Resources */,
-				3EFDE9E81F42E7CF005337A4 /* TQYRPicListTableViewCell.xib in Resources */,
+				E68E8D5D1F45139800D7BF9F /* TQYRMainListTableViewCell.xib in Resources */,
 				3E7B3E371F41214800242993 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +444,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-news/Pods-news-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MJCSegmentInterface/MJCSegmentInterface.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
@@ -404,6 +453,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJCSegmentInterface.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
@@ -454,12 +504,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E68E8D641F4526DE00D7BF9F /* WRProxy.swift in Sources */,
 				E62240B41F420B2C00D98BA0 /* TQYRMainTableViewController.swift in Sources */,
+				E68E8D631F4526DE00D7BF9F /* WRCycleScrollView.swift in Sources */,
 				3E7B3E341F41214800242993 /* ViewController.swift in Sources */,
 				3E7B3E321F41214800242993 /* AppDelegate.swift in Sources */,
 				E62240B81F420B4600D98BA0 /* TQYRMainListModel.m in Sources */,
-				3EFDE9E71F42E7CF005337A4 /* TQYRPicListTableViewCell.swift in Sources */,
+				E68E8D621F4526DE00D7BF9F /* WRCycleCell.swift in Sources */,
 				E62240B51F420B2C00D98BA0 /* TQYRMainViewController.swift in Sources */,
+				E68E8D581F45137F00D7BF9F /* TQYRPicListTableViewCell.swift in Sources */,
+				E68E8D5C1F45139800D7BF9F /* TQYRMainListTableViewCell.swift in Sources */,
 				3EFDEA461F431877005337A4 /* TQYRTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

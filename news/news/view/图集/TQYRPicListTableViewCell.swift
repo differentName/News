@@ -15,14 +15,14 @@ class TQYRPicListTableViewCell: UITableViewCell {
     @IBOutlet weak var fenlei: UILabel!
     @IBOutlet weak var laiyuan: UILabel!
     @IBOutlet weak var time: UILabel!
-    var model : TQYRMainListModel? = nil
+//    var model : TQYRMainListModel? = nil
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         
-        pic.layer.cornerRadius = 5;
+        pic.layer.cornerRadius = 8;
         pic.clipsToBounds = true;
         
     }

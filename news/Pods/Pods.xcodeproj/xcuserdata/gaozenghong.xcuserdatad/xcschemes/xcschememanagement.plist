@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Kingfisher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJCSegmentInterface.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,6 +42,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2F0C0F810568D3E82219429D9D870F04</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4EC7354D02B1C09E70A9702FAF5F8497</key>
 		<dict>
 			<key>primary</key>
@@ -47,17 +57,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>7EEA4F46122AF20521EB2ED3B0AEBB3A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>83DD44BA3A39B03496242B3740F4D3B5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9403E90E3E754BD6FA192902C85DCA41</key>
 		<dict>
 			<key>primary</key>
 			<true/>
