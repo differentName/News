@@ -18,13 +18,20 @@ class TQYRMainTableViewController: UITableViewController{//遵循代理
     var page = 1
     var silenceCarouselView:SilenceCarouselView?
     
-    
-    
+    let topLabel = UILabel.init(frame: CGRect.init(x: 0, y: 64, width: UIScreen.main.bounds.size.width, height: 100));
     
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        
+        //添加长按手势
+        let longPress = UILongPressGestureRecognizer(target:self, action:#selector(longPress(longPress:)))
+        longPress.numberOfTapsRequired = 0 //默认为0
+        
+        longPress.numberOfTouchesRequired = 1  //默认为1
+        self.tableView.addGestureRecognizer(longPress)
         
         TQYRTool.showLoadingImg(controller: self)
         reloadDataWithKeyString(keyStr: keyStr)
@@ -39,8 +46,19 @@ class TQYRMainTableViewController: UITableViewController{//遵循代理
         self.tableView.mj_footer = MJRefreshAutoNormalFooter.init(refreshingBlock: {
             self.loadMoreDataWithType(type: self.currentIndex)
         })
+        
+        
+//        topLabel.isHidden = true;
+        self.topLabel.numberOfLines = 0
+        self.topLabel.backgroundColor = UIColor.init(white: 0.7, alpha: 0.8)
+        self.topLabel.alpha = 0.0
+        UIApplication.shared.keyWindow?.addSubview(topLabel)
+        
     }
-
+    //相当于dealloc方法
+    deinit {
+        topLabel.reloadInputViews()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -98,7 +116,6 @@ class TQYRMainTableViewController: UITableViewController{//遵循代理
             return cell!
         }else{
             let cell :  TQYRMainListTableViewCell = TQYRMainListTableViewCell.creatCellWithTableview(tableView: tableView)
-            
             let model : TQYRMainListModel  = self.listAry[indexPath.row] as! TQYRMainListModel
             cell.model = model
             return cell
@@ -271,6 +288,29 @@ class TQYRMainTableViewController: UITableViewController{//遵循代理
             }
         }
 
+    }
+    
+    //长按手势
+    func longPress(longPress:UILongPressGestureRecognizer) {
+        if longPress.state == UIGestureRecognizerState.began {
+            print("长按响应开始")
+            let point : CGPoint = longPress.location(in: self.tableView)
+            let index = self.tableView.indexPathForRow(at: point) as NSIndexPath?
+            if(index == nil){return}
+            if(index?.section == 0){return}
+            UIView.animate(withDuration: 0.5, animations: { 
+                self.topLabel.alpha = 1.0
+            })
+            let selectedModel : TQYRMainListModel = self.listAry[index!.row] as! TQYRMainListModel
+            print(selectedModel.shortContent)
+            topLabel.text = selectedModel.shortContent
+            
+        } else if longPress.state == UIGestureRecognizerState.ended{
+            print("长按响应结束")
+            UIView.animate(withDuration: 0.5, animations: {
+                self.topLabel.alpha = 0.0
+            })
+        }
     }
     
 }

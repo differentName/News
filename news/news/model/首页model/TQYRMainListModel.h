@@ -23,6 +23,8 @@
 @property (copy, nonatomic) NSString *pic;
 /**内容**/
 @property (copy, nonatomic) NSString *content;
+/**内容**/
+@property (copy, nonatomic) NSString *shortContent;
 /**原文手机网址**/
 @property (copy, nonatomic) NSString *url;
 /**原文PC网址**/

@@ -16,6 +16,7 @@ class TQYRMainListTableViewCell: UITableViewCell {
     @IBOutlet weak var fenlei: UILabel!
     @IBOutlet weak var laiyuan: UILabel!
     @IBOutlet weak var time: UILabel!
+    
     //这是定义一个变量  并实现其set和get方法  didset是指该变量发生变化的时候就会调用
     var model : TQYRMainListModel?{
         didSet{
@@ -37,8 +38,7 @@ class TQYRMainListTableViewCell: UITableViewCell {
         
         
         fenlei.layer.cornerRadius = 10;
-        fenlei.clipsToBounds = true;
-        
+        fenlei.clipsToBounds = true;        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
