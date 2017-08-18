@@ -40,7 +40,7 @@ class TQYRTool: NSObject {
         
         loadingImgView.image = #imageLiteral(resourceName: "Oval")
         addRotationAnim(loadingImgView: loadingImgView)
-        loadingImgView.center = CGPoint.init(x: controller.view.center.x, y: controller.view.center.y-90)
+        loadingImgView.center = CGPoint.init(x: (UIApplication.shared.keyWindow?.center.x)!, y: (UIApplication.shared.keyWindow?.center.y)!-90)
 
         controller.view.addSubview(loadingImgView)
         
@@ -62,7 +62,7 @@ class TQYRTool: NSObject {
         default:
             noDataImgView.image = #imageLiteral(resourceName: "nodata3")
         }
-        noDataImgView.center = CGPoint.init(x: controller.view.center.x, y: controller.view.center.y-80)
+        noDataImgView.center = CGPoint.init(x: (UIApplication.shared.keyWindow?.center.x)!, y: (UIApplication.shared.keyWindow?.center.y)!-80)
         
         controller.view.addSubview(noDataImgView)
     }

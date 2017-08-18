@@ -32,7 +32,7 @@
         <!--news-->
         <scene sceneID="FBn-2O-FSu">
             <objects>
-                <navigationController id="8Z2-7e-RvX" sceneMemberID="viewController">
+                <navigationController id="8Z2-7e-RvX" customClass="TQYRMainNavController" customModule="news" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="news" image="tab_news" id="fqh-Dk-e4J"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uz1-89-gAY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

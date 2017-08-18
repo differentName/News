@@ -27,9 +27,10 @@
 		E68E8D591F45137F00D7BF9F /* TQYRPicListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E68E8D571F45137F00D7BF9F /* TQYRPicListTableViewCell.xib */; };
 		E68E8D5C1F45139800D7BF9F /* TQYRMainListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E8D5A1F45139800D7BF9F /* TQYRMainListTableViewCell.swift */; };
 		E68E8D5D1F45139800D7BF9F /* TQYRMainListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E68E8D5B1F45139800D7BF9F /* TQYRMainListTableViewCell.xib */; };
-		E68E8D621F4526DE00D7BF9F /* WRCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E8D5F1F4526DE00D7BF9F /* WRCycleCell.swift */; };
-		E68E8D631F4526DE00D7BF9F /* WRCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E8D601F4526DE00D7BF9F /* WRCycleScrollView.swift */; };
-		E68E8D641F4526DE00D7BF9F /* WRProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E8D611F4526DE00D7BF9F /* WRProxy.swift */; };
+		E6C454C41F4664DE00AE2124 /* SilenceCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C454C31F4664DE00AE2124 /* SilenceCarouselView.swift */; };
+		E6C454CB1F466FD800AE2124 /* TQYRNewsDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C454C91F466FD800AE2124 /* TQYRNewsDetailController.swift */; };
+		E6C454CC1F466FD800AE2124 /* TQYRNewsDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6C454CA1F466FD800AE2124 /* TQYRNewsDetailController.xib */; };
+		E6C454D01F467E5F00AE2124 /* TQYRMainNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C454CF1F467E5F00AE2124 /* TQYRMainNavController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,9 +81,10 @@
 		E68E8D571F45137F00D7BF9F /* TQYRPicListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TQYRPicListTableViewCell.xib; sourceTree = "<group>"; };
 		E68E8D5A1F45139800D7BF9F /* TQYRMainListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQYRMainListTableViewCell.swift; sourceTree = "<group>"; };
 		E68E8D5B1F45139800D7BF9F /* TQYRMainListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TQYRMainListTableViewCell.xib; sourceTree = "<group>"; };
-		E68E8D5F1F4526DE00D7BF9F /* WRCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleCell.swift; sourceTree = "<group>"; };
-		E68E8D601F4526DE00D7BF9F /* WRCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleScrollView.swift; sourceTree = "<group>"; };
-		E68E8D611F4526DE00D7BF9F /* WRProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRProxy.swift; sourceTree = "<group>"; };
+		E6C454C31F4664DE00AE2124 /* SilenceCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SilenceCarouselView.swift; sourceTree = "<group>"; };
+		E6C454C91F466FD800AE2124 /* TQYRNewsDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQYRNewsDetailController.swift; sourceTree = "<group>"; };
+		E6C454CA1F466FD800AE2124 /* TQYRNewsDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TQYRNewsDetailController.xib; sourceTree = "<group>"; };
+		E6C454CF1F467E5F00AE2124 /* TQYRMainNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQYRMainNavController.swift; sourceTree = "<group>"; };
 		FDC245363A0BB3927DFA14A5 /* Pods-news.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-news.debug.xcconfig"; path = "Pods/Target Support Files/Pods-news/Pods-news.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +143,7 @@
 		3E7B3E301F41214800242993 /* news */ = {
 			isa = PBXGroup;
 			children = (
+				E6C454CE1F467E4500AE2124 /* main */,
 				3EFDE9EC1F43086E005337A4 /* tool */,
 				3EFDE9E91F430838005337A4 /* other */,
 				3EFDE9E31F42E7AE005337A4 /* view */,
@@ -198,7 +201,7 @@
 		3EFDE9E91F430838005337A4 /* other */ = {
 			isa = PBXGroup;
 			children = (
-				E68E8D5E1F4526DE00D7BF9F /* WRCycleScrollView */,
+				E6C454C21F4664DE00AE2124 /* 轮播图 */,
 			);
 			path = other;
 			sourceTree = "<group>";
@@ -244,6 +247,8 @@
 		E62240AF1F420B2C00D98BA0 /* 首页模块 */ = {
 			isa = PBXGroup;
 			children = (
+				E6C454C91F466FD800AE2124 /* TQYRNewsDetailController.swift */,
+				E6C454CA1F466FD800AE2124 /* TQYRNewsDetailController.xib */,
 				E62240B01F420B2C00D98BA0 /* TQYRMainTableViewController.swift */,
 				E62240B11F420B2C00D98BA0 /* TQYRMainViewController.swift */,
 			);
@@ -290,14 +295,20 @@
 			path = "我的";
 			sourceTree = "<group>";
 		};
-		E68E8D5E1F4526DE00D7BF9F /* WRCycleScrollView */ = {
+		E6C454C21F4664DE00AE2124 /* 轮播图 */ = {
 			isa = PBXGroup;
 			children = (
-				E68E8D5F1F4526DE00D7BF9F /* WRCycleCell.swift */,
-				E68E8D601F4526DE00D7BF9F /* WRCycleScrollView.swift */,
-				E68E8D611F4526DE00D7BF9F /* WRProxy.swift */,
+				E6C454C31F4664DE00AE2124 /* SilenceCarouselView.swift */,
 			);
-			path = WRCycleScrollView;
+			path = "轮播图";
+			sourceTree = "<group>";
+		};
+		E6C454CE1F467E4500AE2124 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				E6C454CF1F467E5F00AE2124 /* TQYRMainNavController.swift */,
+			);
+			path = main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,6 +427,7 @@
 				3E7B3E391F41214800242993 /* Assets.xcassets in Resources */,
 				E68E8D5D1F45139800D7BF9F /* TQYRMainListTableViewCell.xib in Resources */,
 				3E7B3E371F41214800242993 /* Main.storyboard in Resources */,
+				E6C454CC1F466FD800AE2124 /* TQYRNewsDetailController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,15 +516,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E68E8D641F4526DE00D7BF9F /* WRProxy.swift in Sources */,
 				E62240B41F420B2C00D98BA0 /* TQYRMainTableViewController.swift in Sources */,
-				E68E8D631F4526DE00D7BF9F /* WRCycleScrollView.swift in Sources */,
 				3E7B3E341F41214800242993 /* ViewController.swift in Sources */,
+				E6C454C41F4664DE00AE2124 /* SilenceCarouselView.swift in Sources */,
 				3E7B3E321F41214800242993 /* AppDelegate.swift in Sources */,
 				E62240B81F420B4600D98BA0 /* TQYRMainListModel.m in Sources */,
-				E68E8D621F4526DE00D7BF9F /* WRCycleCell.swift in Sources */,
 				E62240B51F420B2C00D98BA0 /* TQYRMainViewController.swift in Sources */,
+				E6C454D01F467E5F00AE2124 /* TQYRMainNavController.swift in Sources */,
 				E68E8D581F45137F00D7BF9F /* TQYRPicListTableViewCell.swift in Sources */,
+				E6C454CB1F466FD800AE2124 /* TQYRNewsDetailController.swift in Sources */,
 				E68E8D5C1F45139800D7BF9F /* TQYRMainListTableViewCell.swift in Sources */,
 				3EFDEA461F431877005337A4 /* TQYRTool.swift in Sources */,
 			);

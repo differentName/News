@@ -9,16 +9,17 @@
 import UIKit
 import Alamofire
 import MJRefresh
-class TQYRMainTableViewController: UITableViewController,WRCycleScrollViewDelegate{//遵循代理
+class TQYRMainTableViewController: UITableViewController{//遵循代理
     var keyStr = ""
     var currentKeyStr = "头条"
     var currentIndex = 0
     let typeAry = ["头条","新闻","财经","体育","娱乐","军事","教育","科技","NBA","股票","星座","女性","健康","育儿"]
     var listAry :NSMutableArray = NSMutableArray.init()
     var page = 1
+    var silenceCarouselView:SilenceCarouselView?
     
     
-    var cycleScrollView:WRCycleScrollView?
+    
     
     
     override func viewDidLoad() {
@@ -88,13 +89,12 @@ class TQYRMainTableViewController: UITableViewController,WRCycleScrollViewDelega
                 serverImages.add(tempModel.pic)
                 descs.add(tempModel.title)
             }
-            cycleScrollView = WRCycleScrollView(frame: CGRect.init(x: 0, y: 0, width: self.view.frame.size.width, height: 150), type: .SERVER, imgs: serverImages as? [String])
-            cycleScrollView!.delegate = self
-            cycleScrollView?.imageContentModel = UIViewContentMode.scaleToFill
-            cycleScrollView?.tag = 9528
-            cycleScrollView?.descTextArray = descs as? [String]
-            cell?.contentView.addSubview(cycleScrollView!)
-
+            self.silenceCarouselView = SilenceCarouselView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 150), imageArray: serverImages as [AnyObject] ,titleAry:descs as! [NSString],silenceCarouselViewTapBlock: { (carouselView, index) in
+                self.pushToNewsDetailWithIndex(index:index)
+            });
+            self.silenceCarouselView?.tag = 9528
+//            self.silenceCarouselView?.titleArray = 
+            cell?.contentView.addSubview(self.silenceCarouselView!)
             return cell!
         }else{
             let cell :  TQYRMainListTableViewCell = TQYRMainListTableViewCell.creatCellWithTableview(tableView: tableView)
@@ -106,8 +106,10 @@ class TQYRMainTableViewController: UITableViewController,WRCycleScrollViewDelega
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-      
+        self.pushToNewsDetailWithIndex(index: indexPath.row)
     }
+    
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
             return 150
@@ -228,6 +230,16 @@ class TQYRMainTableViewController: UITableViewController,WRCycleScrollViewDelega
         
     }
     
+    func pushToNewsDetailWithIndex(index : Int)  {
+        let detailController : TQYRNewsDetailController = TQYRNewsDetailController.init()
+        let model : TQYRMainListModel = self.listAry[index] as! TQYRMainListModel
+        if model.url == "" {
+            return
+        }
+        detailController.url = (model.url as NSString?)!
+        detailController.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(detailController, animated: true)
+    }
     
     func loadMoreDataWithType(type : Int)  {
         Alamofire.request("http://api.jisuapi.com/news/get",parameters: ["channel": typeAry[type],"appkey":"0a4d2c1f8257519d","start":page*20]).responseJSON { response in
@@ -261,19 +273,4 @@ class TQYRMainTableViewController: UITableViewController,WRCycleScrollViewDelega
 
     }
     
-  
-}
-//轮播图的点击代理时间
-extension TQYRMainViewController: WRCycleScrollViewDelegate
-{
-    /// 点击图片事件
-    func cycleScrollViewDidSelect(at index:Int, cycleScrollView:WRCycleScrollView)
-    {
-        print("点击了第\(index+1)个图片")
-    }
-    /// 图片滚动事件
-    func cycleScrollViewDidScroll(to index:Int, cycleScrollView:WRCycleScrollView)
-    {
-        print("滚动到了第\(index+1)个图片")
-    }
 }
