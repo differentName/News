@@ -16,6 +16,9 @@
 		3E7B3E3C1F41214800242993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7B3E3A1F41214800242993 /* LaunchScreen.storyboard */; };
 		3E7B3E471F41214800242993 /* newsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B3E461F41214800242993 /* newsTests.swift */; };
 		3E7B3E521F41214800242993 /* newsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B3E511F41214800242993 /* newsUITests.swift */; };
+		3E8EC5DD1F54027100DF7CD1 /* TQYRLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8EC5DB1F54027100DF7CD1 /* TQYRLoginController.swift */; };
+		3E8EC5DE1F54027100DF7CD1 /* TQYRLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8EC5DC1F54027100DF7CD1 /* TQYRLoginController.xib */; };
+		3EDA6E601F4C29A200966B62 /* TQYRUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDA6E5F1F4C29A200966B62 /* TQYRUserModel.swift */; };
 		3EFDEA461F431877005337A4 /* TQYRTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFDEA451F431877005337A4 /* TQYRTool.swift */; };
 		E62240B41F420B2C00D98BA0 /* TQYRMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62240B01F420B2C00D98BA0 /* TQYRMainTableViewController.swift */; };
 		E62240B51F420B2C00D98BA0 /* TQYRMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62240B11F420B2C00D98BA0 /* TQYRMainViewController.swift */; };
@@ -69,6 +72,9 @@
 		3E7B3E4D1F41214800242993 /* newsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7B3E511F41214800242993 /* newsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsUITests.swift; sourceTree = "<group>"; };
 		3E7B3E531F41214800242993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E8EC5DB1F54027100DF7CD1 /* TQYRLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQYRLoginController.swift; sourceTree = "<group>"; };
+		3E8EC5DC1F54027100DF7CD1 /* TQYRLoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TQYRLoginController.xib; sourceTree = "<group>"; };
+		3EDA6E5F1F4C29A200966B62 /* TQYRUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQYRUserModel.swift; sourceTree = "<group>"; };
 		3EFDEA451F431877005337A4 /* TQYRTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQYRTool.swift; sourceTree = "<group>"; };
 		E62240B01F420B2C00D98BA0 /* TQYRMainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQYRMainTableViewController.swift; sourceTree = "<group>"; };
 		E62240B11F420B2C00D98BA0 /* TQYRMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TQYRMainViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +184,30 @@
 			path = newsUITests;
 			sourceTree = "<group>";
 		};
+		3E8EC5DA1F54023F00DF7CD1 /* 登录注册模块 */ = {
+			isa = PBXGroup;
+			children = (
+				3E8EC5DB1F54027100DF7CD1 /* TQYRLoginController.swift */,
+				3E8EC5DC1F54027100DF7CD1 /* TQYRLoginController.xib */,
+			);
+			path = "登录注册模块";
+			sourceTree = "<group>";
+		};
+		3E8EC5E01F5415A300DF7CD1 /* 我的模块 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "我的模块";
+			sourceTree = "<group>";
+		};
+		3EDA6E5E1F4C291A00966B62 /* 我的model */ = {
+			isa = PBXGroup;
+			children = (
+				3EDA6E5F1F4C29A200966B62 /* TQYRUserModel.swift */,
+			);
+			path = "我的model";
+			sourceTree = "<group>";
+		};
 		3EFDE9E31F42E7AE005337A4 /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +269,8 @@
 		E62240AE1F420B2C00D98BA0 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				3E8EC5E01F5415A300DF7CD1 /* 我的模块 */,
+				3E8EC5DA1F54023F00DF7CD1 /* 登录注册模块 */,
 				E62240AF1F420B2C00D98BA0 /* 首页模块 */,
 			);
 			path = controller;
@@ -258,6 +290,7 @@
 		E62240B21F420B2C00D98BA0 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				3EDA6E5E1F4C291A00966B62 /* 我的model */,
 				E62240B31F420B2C00D98BA0 /* 首页model */,
 			);
 			path = model;
@@ -426,6 +459,7 @@
 				3E7B3E3C1F41214800242993 /* LaunchScreen.storyboard in Resources */,
 				3E7B3E391F41214800242993 /* Assets.xcassets in Resources */,
 				E68E8D5D1F45139800D7BF9F /* TQYRMainListTableViewCell.xib in Resources */,
+				3E8EC5DE1F54027100DF7CD1 /* TQYRLoginController.xib in Resources */,
 				3E7B3E371F41214800242993 /* Main.storyboard in Resources */,
 				E6C454CC1F466FD800AE2124 /* TQYRNewsDetailController.xib in Resources */,
 			);
@@ -519,6 +553,7 @@
 				E62240B41F420B2C00D98BA0 /* TQYRMainTableViewController.swift in Sources */,
 				3E7B3E341F41214800242993 /* ViewController.swift in Sources */,
 				E6C454C41F4664DE00AE2124 /* SilenceCarouselView.swift in Sources */,
+				3E8EC5DD1F54027100DF7CD1 /* TQYRLoginController.swift in Sources */,
 				3E7B3E321F41214800242993 /* AppDelegate.swift in Sources */,
 				E62240B81F420B4600D98BA0 /* TQYRMainListModel.m in Sources */,
 				E62240B51F420B2C00D98BA0 /* TQYRMainViewController.swift in Sources */,
@@ -526,6 +561,7 @@
 				E68E8D581F45137F00D7BF9F /* TQYRPicListTableViewCell.swift in Sources */,
 				E6C454CB1F466FD800AE2124 /* TQYRNewsDetailController.swift in Sources */,
 				E68E8D5C1F45139800D7BF9F /* TQYRMainListTableViewCell.swift in Sources */,
+				3EDA6E601F4C29A200966B62 /* TQYRUserModel.swift in Sources */,
 				3EFDEA461F431877005337A4 /* TQYRTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

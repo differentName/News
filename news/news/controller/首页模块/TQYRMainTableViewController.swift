@@ -123,7 +123,11 @@ class TQYRMainTableViewController: UITableViewController{//遵循代理
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.pushToNewsDetailWithIndex(index: indexPath.row)
+        
+        let controllrt : TQYRLoginController = TQYRLoginController.init()
+            self.navigationController?.pushViewController(controllrt, animated: true)
+            
+//        self.pushToNewsDetailWithIndex(index: indexPath.row)
     }
     
     

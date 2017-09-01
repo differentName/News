@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JHT-ih-cFS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JHT-ih-cFS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -65,7 +65,7 @@
             </objects>
             <point key="canvasLocation" x="319" y="-1182"/>
         </scene>
-        <!--Root View Controller-->
+        <!--图集-->
         <scene sceneID="VHT-W1-kDn">
             <objects>
                 <tableViewController id="jAk-9L-ucc" sceneMemberID="viewController">
@@ -88,7 +88,7 @@
                             <outlet property="delegate" destination="jAk-9L-ucc" id="6e3-C4-jSU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="rFD-JW-PnD"/>
+                    <navigationItem key="navigationItem" title="图集" id="rFD-JW-PnD"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bSA-Ja-1gT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,7 +111,7 @@
             </objects>
             <point key="canvasLocation" x="-442" y="-490"/>
         </scene>
-        <!--Root View Controller-->
+        <!--视频-->
         <scene sceneID="hr9-9i-7FB">
             <objects>
                 <tableViewController id="hC8-P7-OQI" sceneMemberID="viewController">
@@ -134,7 +134,7 @@
                             <outlet property="delegate" destination="hC8-P7-OQI" id="5DD-dt-3zw"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="NHj-nc-tMB"/>
+                    <navigationItem key="navigationItem" title="视频" id="NHj-nc-tMB"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xRz-VJ-k7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,7 +157,7 @@
             </objects>
             <point key="canvasLocation" x="-442" y="164"/>
         </scene>
-        <!--Root View Controller-->
+        <!--我的-->
         <scene sceneID="B87-56-MzC">
             <objects>
                 <tableViewController id="5XA-m2-pdD" sceneMemberID="viewController">
@@ -180,11 +180,11 @@
                             <outlet property="delegate" destination="5XA-m2-pdD" id="hPp-tV-Bm0"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="OOc-vH-Esy"/>
+                    <navigationItem key="navigationItem" title="我的" id="OOc-vH-Esy"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fqy-dw-xiH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="438" y="982"/>
+            <point key="canvasLocation" x="438" y="987"/>
         </scene>
         <!--我的-->
         <scene sceneID="2PD-ei-Byj">
@@ -196,7 +196,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="5XA-m2-pdD" kind="relationship" relationship="rootViewController" id="nTv-jC-oNB"/>
+                        <segue destination="5XA-m2-pdD" kind="relationship" relationship="rootViewController" id="3gt-1s-aPN"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQS-FN-9F8" userLabel="First Responder" sceneMemberID="firstResponder"/>
